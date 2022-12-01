@@ -1,0 +1,49 @@
+.hero-section{
+    padding-top: 120px;
+}
+.hero{
+    background-image: url("../../img/hero-bg.png");
+    background-repeat: no-repeat;
+    // background-size: auto;
+    background-size: contain;
+    background-position: center;
+    padding: 230px 0 150px 0;
+    padding-left: 140px;
+    border-radius: 15px;
+
+    &__content{
+        width: 25%;
+
+        &-title{
+            margin: 0;
+            font-weight: 700;
+            line-height: 46px;
+            font-size: 38px;
+            color: #FFFFFF;
+            text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.49);
+
+        }
+
+        &-text{
+            margin: 14px 0;
+            font-weight: 600;
+            line-height: 22px;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.43);
+
+        }
+
+        &-link{
+            padding: 15px 30px 16px 26px;
+            display: inline-block;
+            border-radius: 20px;
+            background: #E4BD63;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+            
+        }
+    }
+}
