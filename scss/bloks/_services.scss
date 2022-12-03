@@ -1,54 +1,67 @@
 .services-section{
     padding-top: 100px;
+    
     margin-bottom: 80px;
 }
 
-.services{
+// services top
+.services__top{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.servises__top-title{
+    font-weight: 500;
+    line-height: 39px;
+    font-size: 32px;
+    color: #000000;
+}
+.servises__top-text{
+    margin-top: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 18px;
+    color: #000000;
+}
 
-    &__top{
-        width: 40%;
-        margin: 0 auto;
-        text-align: center;
+// services body
+.services__body-item{
+    @include center(center);
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 40px;
+    // padding: 0 10px;
+}
+.services__body-item-list > a{
+    box-shadow: (0px 2px 13px rgba(0, 0, 0, 0.13));
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    transition: all 0.5s;
 
-        &-title{
-            font-weight: 500;
-            line-height: 39px;
-            font-size: 32px;
-            color: #000000;
-        }
-
-        &-text{
-            margin-top: 18px;
-            font-weight: 400;
-            line-height: 22px;
-            font-size: 18px;
-            color: #000000;
-        }
+    &:hover{
+        box-shadow: 0px 9px 10px rgba(255, 65, 108, 0.38);
+        color: #FF416C;
     }
 
-    &__body{
-        margin-top: 40px;
-        padding: 0 100px;
+}
 
-        &-item{
-            @include center (center);
-            flex-wrap: wrap;
-            gap: 32px;
 
-            &-list{
 
-                & > a{
-                    display: inline-block;
-                    padding: 10px 0;
-                    background: #FFFFFF;
-                    border-radius: 12px;
-                    font-weight: 400;
-                    line-height: 20px;
-                    font-size: 16px;
-                    text-align: center;
-                    color: #000000;
-                }
-            }
-        }
-    }
+
+// services footer
+.services__footer{
+    margin-top: 100px;
+}
+.services__footer-item{
+    @include center(space-between);
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.services__footer-item-list{
+    width: 25%;
 }
