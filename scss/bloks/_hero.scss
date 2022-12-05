@@ -155,6 +155,7 @@
 .box__item{
     position: absolute;
     padding: 0 90px;
+    max-width: 1300px;
     width: 83%;
     @include center (space-between);
     align-items: flex-start;
