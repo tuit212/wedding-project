@@ -190,6 +190,8 @@
     padding-bottom: 35px;
 }
 
+
+
 .box__item-list::before{
     content: '';
     position: absolute;
@@ -213,21 +215,19 @@
     transition: all 0.5s;
 }
 
-.box__item-list:hover{
+
+.box-active{
     transform: scale(1.05);
 
     & > p{
         color: #FF416C;
     }
 
+    &::after{
+        width: 60%;
+    }
 
+    &::before{
+        width: 50px;
+    }
 }
-
-.box__item-list:hover::before{
-    width: 50px;
-}
-.box__item-list:hover::after{
-    width: 60%;
-}
-
-
