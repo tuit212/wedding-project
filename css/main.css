@@ -1115,4 +1115,140 @@ template {
 .display-flex {
   display: flex;
   justify-content: space-between;
+}
+
+.login-active {
+  background: #EEEEEE;
+  border-radius: 20px 0px 20px 20px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.register {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.login-section {
+  padding: 140px 0 120px 0;
+  background-color: #fff;
+}
+.login-section .login {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+.login-section .login__left {
+  width: 100%;
+  position: relative;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.login-section .login__left-title {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  padding: 0 77px;
+  cursor: pointer;
+}
+.login-section .login__right {
+  width: 50%;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.login-section .login__right-title {
+  border: none;
+  background-color: transparent;
+  padding: 0 77px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-body {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.login__left-body {
+  display: none;
+  width: 50%;
+  margin: 70px auto;
+}
+.login__left-body .marjin-top {
+  margin-bottom: 15px;
+}
+.login__left-body .label {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #706C6C;
+  margin-bottom: 5px;
+}
+.login__left-body .login__left-body-form > .input {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: 1px solid #C4C4C4;
+}
+.login__left-body .login__left-body-form > .input::-moz-placeholder {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.login__left-body .login__left-body-form > .input:-ms-input-placeholder {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.login__left-body .login__left-body-form > .input::placeholder {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.login__left-body .btn {
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.13);
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  background: #FF416C;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.login__left-body .link {
+  margin-top: 30px;
+  text-align: center;
+}
+.login__left-body .link > a {
+  font-weight: 500;
+  line-height: 17px;
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-align: center;
+  color: #262626;
 }/*# sourceMappingURL=main.css.map */

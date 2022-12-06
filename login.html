@@ -53,7 +53,7 @@
                         <i class="fa fa-chevron-down"></i>
                     </div>
                 </div>
-                <a class="header__content-enter" href="login.html">Kirish</a>
+                <a class="header__content-enter active" href="login.html">Kirish</a>
                 <button class="header__content-register"> 
                     <i class="fa fa-user"></i>
                     Registratsiya
@@ -152,16 +152,66 @@
     <main class="site-main">
         <section class="login-section">
             <div class="container">
-                <div class="login">
-
+                <div class="register">
+                    <div class="login">
+                        <div class="login__left  login-activ">
+                            <div class="login__left-top">
+                                <button class="login__left-title">Login</button>
+                            </div>
+                        </div>
+                        
+                        <div class="login__right ">
+                            <div class="login__right-top ">
+                                <button class="login__right-title">Registratsiya</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register-body">
+                        <div class="login__left-body">
+                            <form class="login__left-body-form" action="https://echo.htmlacademy.ru/" method="post">
+                                <label class="label" for="tel">Telefon</label>
+                                <input class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" > 
+                                <label class="label" for="password">Parol</label>
+                                <input class="input" type="password" name="password" id="password">
+                                <button class="btn">Login</button>
+                                <div class="link">
+                                    <a href="#link">Parolni unutdingizmi?</a><br>
+                                    <a href="#link">Yangilash</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="register__left-body">
+                            <form action="https://echo.htmlacademy.ru/" method="post">
+                                <label class="label" for="text">Ism</label>
+                                <input type="text" id="text" name="text" placeholder="Asadbek">
+                                <label class="label" for="familiya">Familiya</label>
+                                <input type="text" id="familiya" name="familiya" placeholder="Anvarov">
+                                <label class="label" for="tel">Telefon</label>
+                                <input class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" > 
+                                
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- main end -->
+
+
+
+
+
+
+
+
+
+
+
     
 
-<!-- js link -->
-<script src="./js/index.js"></script>
+    <!-- js link -->
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
 </body>
 </html>
