@@ -1,0 +1,18 @@
+
+.site-footer{
+    background-color: #E8F6FD;
+    padding: 34px 0;
+
+    .footer{
+
+        &__item{
+            @include center(space-between);
+            align-items: flex-start;
+            padding: 0 50px;
+
+            &-list{
+                width: 25%;
+            }
+        }
+    }
+}

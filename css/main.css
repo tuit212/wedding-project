@@ -1117,10 +1117,33 @@ template {
   justify-content: space-between;
 }
 
+.site-footer {
+  background-color: #E8F6FD;
+  padding: 34px 0;
+}
+.site-footer .footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+.site-footer .footer__item-list {
+  width: 25%;
+}
+
 .login-active {
   background: #EEEEEE;
-  border-radius: 20px 0px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.login-activ {
+  background: #EEEEEE;
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
 }
 
 .register {
@@ -1156,6 +1179,11 @@ template {
   background-color: transparent;
   padding: 0 77px;
   cursor: pointer;
+  font-weight: 500;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000000;
 }
 .login-section .login__right {
   width: 50%;
@@ -1165,9 +1193,14 @@ template {
 .login-section .login__right-title {
   border: none;
   background-color: transparent;
-  padding: 0 77px;
+  padding: 0 25px;
   text-align: center;
   cursor: pointer;
+  font-weight: 500;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000000;
 }
 
 .register-body {
@@ -1182,9 +1215,8 @@ template {
 }
 
 .login__left-body {
-  display: none;
   width: 50%;
-  margin: 70px auto;
+  margin: 120px auto;
 }
 .login__left-body .marjin-top {
   margin-bottom: 15px;
@@ -1251,4 +1283,167 @@ template {
           text-decoration-line: underline;
   text-align: center;
   color: #262626;
+}
+
+.register__left-body {
+  width: 100%;
+  display: none;
+  padding: 0px 94px;
+  margin: 70px auto;
+}
+.register__left-body .register-input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #C4C4C4;
+}
+.register__left-body .register-input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.register__left-body .register-input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.register__left-body .register-input::placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #B1AEAE;
+}
+.register__left-body .label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #706C6C;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+.register__left-body .link {
+  text-align: center;
+}
+.register__left-body .link > a {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #262626;
+  font-weight: 500;
+}
+.register__left-body .register-button {
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+  background: #FF416C;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 11px 60px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.register__left-body .register-section {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 82px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.register__left-body .register-section-box {
+  width: 182px;
+  border-radius: 12px;
+  border: 1px solid #C4C4C4;
+  position: relative;
+  padding: 13px 14px 14px 7px;
+  cursor: pointer;
+}
+.register__left-body .register-section-box-span {
+  font-weight: 300;
+  font-size: 12px;
+  color: #706C6C;
+}
+.register__left-body .register-section-box .register-button-left {
+  position: absolute;
+  right: 10px;
+  top: 19px;
+}
+.register__left-body .register-section-box .register-button-left-line {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 9px;
+  background-color: rgba(38, 38, 38, 0.7921568627);
+  border-radius: 1px;
+  transition: all 0.5s;
+}
+.register__left-body .register-section-box .register-button-left-line:last-child {
+  transform: rotate(35deg);
+}
+.register__left-body .register-section-box .register-button-left-line:first-child {
+  left: -5px;
+  transform: rotate(-35deg);
+}
+.register__left-body .register-section-box .register-section-body {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  top: 100%;
+  border-radius: 10px;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  display: none;
+}
+.register__left-body .register-section-box .register-section-body > span {
+  padding: 5px 0;
+  display: inline-block;
+  font-weight: 500;
+  width: 100%;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #706C6C;
+}
+.register__left-body .register-section-box .register-section-body > span:hover {
+  background-color: #262626;
+  color: #fff;
+}
+
+.form__select-content {
+  width: 30%;
+}
+
+.form__select {
+  padding: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #C4C4C4;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 15px;
+  color: #706C6C;
+}
+
+option {
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 15px;
+  color: #706C6C;
+  text-align: center;
+}
+option:hover {
+  background-color: #262626;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

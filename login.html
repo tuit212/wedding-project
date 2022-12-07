@@ -154,13 +154,13 @@
             <div class="container">
                 <div class="register">
                     <div class="login">
-                        <div class="login__left  login-activ">
+                        <div class="login__left  wrapper login-active">
                             <div class="login__left-top">
-                                <button class="login__left-title">Login</button>
+                                <button class="login__left-title ">Login</button>
                             </div>
                         </div>
                         
-                        <div class="login__right ">
+                        <div class="login__right wrapper">
                             <div class="login__right-top ">
                                 <button class="login__right-title">Registratsiya</button>
                             </div>
@@ -170,9 +170,9 @@
                         <div class="login__left-body">
                             <form class="login__left-body-form" action="https://echo.htmlacademy.ru/" method="post">
                                 <label class="label" for="tel">Telefon</label>
-                                <input class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" > 
+                                <input class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" required > 
                                 <label class="label" for="password">Parol</label>
-                                <input class="input" type="password" name="password" id="password">
+                                <input class="input" type="password" name="password" id="password" required>
                                 <button class="btn">Login</button>
                                 <div class="link">
                                     <a href="#link">Parolni unutdingizmi?</a><br>
@@ -181,14 +181,41 @@
                             </form>
                         </div>
                         <div class="register__left-body">
-                            <form action="https://echo.htmlacademy.ru/" method="post">
-                                <label class="label" for="text">Ism</label>
-                                <input type="text" id="text" name="text" placeholder="Asadbek">
+                            <form class="login__left-body-form" action="https://echo.htmlacademy.ru/" method="post">
+                                <label class="label" for="name">Ism</label>
+                                <input class="register-input" type="text" id="name" name="name" placeholder="Asadbek" required>
                                 <label class="label" for="familiya">Familiya</label>
-                                <input type="text" id="familiya" name="familiya" placeholder="Anvarov">
+                                <input class="register-input" type="text" id="familiya" name="familiya" placeholder="Anvarov" required>
                                 <label class="label" for="tel">Telefon</label>
-                                <input class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" > 
-                                
+                                <input class="register-input" class="input marjin-top" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08" required> 
+                                <div class="register-section">
+                                    <div class="form__select-content ">
+                                        <select 
+                                            class="form__select form-select " aria-label="Default   select example" id="pizza__select"
+                                            name="user-selected" required>
+                                            <option
+                                                value="Tanlanmagan" selected hidden>
+                                                 viloyatni tanlang
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form__select-content ">
+                                        <select
+                                             class="form__select form-selectt " aria-label="Default select example" id="pizza__select"
+                                            name="user-selected" required>
+                                             <option 
+                                             value="Tanlanmagan" selected hidden>
+                                             shahar / tuman
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <label class="label" for="Manzilingiz">Manzil</label>
+                                <input class="register-input" type="text" name="Manzilingiz" id="Manzilingiz"  placeholder="Manzilingiz" required>
+                                <div class="link">
+                                    <a href="#link">Sizning raqamingizga sms kod yuboriladi</a><br>
+                                </div>
+                                <button class="register-button">Registratsiya</button>
                             </form>
                         </div>
                     </div>
@@ -197,6 +224,37 @@
         </section>
     </main>
     <!-- main end -->
+    <!-- footer start -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer">
+                <ul class="footer__item">
+                    <li class="footer__item-list">
+                        <div>   
+                            <a href="index.html">
+                                Real<span>DAY</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="login.html">
+                                Registratsiyadan o'tish
+                            </a>
+                        </div>
+                    </li>
+                    <li class="footer__item-list">
+                        salom
+                    </li>
+                    <li class="footer__item-list">
+                        salom
+                    </li>
+                    <li class="footer__item-list">
+                        salom
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 
 
 
@@ -212,6 +270,6 @@
 
     <!-- js link -->
     <script src="./js/index.js"></script>
-    <!-- <script src="./js/login.js"></script> -->
+    <script src="./js/login.js"></script>
 </body>
 </html>

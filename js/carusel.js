@@ -2,6 +2,8 @@
 // carusel start
 
 
+
+
 let left = document.querySelector(".left");
 let right = document.querySelector(".right");
 let hero = document.querySelector(".hero");
