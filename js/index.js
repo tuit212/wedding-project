@@ -203,14 +203,15 @@ for (let option = 0; option < elSelArr.length; option++) {
 		for (let x = 0; x < kodRegister.length; x++) {
 			if (kodRegister[x] == this) {
 				kodRegister[x].classList.add('new-register-active');
-                kodBody.style.display = "none"
-                parolBody.style.display = "block"
+        kodBody.style.display = "none"
+        parolBody.style.display = "block"
                 
 			} else {
 				kodRegister[x].classList.remove('new-register-active');
-                kodBody.style.display = "block"
-                parolBody.style.display = "none"
+        kodBody.style.display = "block"
+        parolBody.style.display = "none"
 			}
 		}
 	});
 }
+

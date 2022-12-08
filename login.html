@@ -152,7 +152,7 @@
     <main class="site-main">
         <section class="login-section">
             <div class="container">
-                <div class="register"  style="display: none;" >
+                <div class="register"  >
                     <div class="login">
                         <div class="login__left  wrapper login-active">
                             <div class="login__left-top">
@@ -231,26 +231,32 @@
                         <button class="new-login-button">OK</button>
                     </form>
                 </div>
-                <div class="new-register">
+                <div class="new-register" style="display: none;">
                     <div class="new__register-top">
                         <div class="new__register-top-kod new__register new-register-active">
                             <span>KOD</span>
                         </div>
-                        <div class="new__register-top-parol new__register">
+                        <div class="new__register-top-parol new__register ">
                             <span>PAROL</span>
                         </div>
                     </div>
                     <div class="new__register-body-kod">
-                        <span>02:23</span>
-                        <form action="https://echo.htmlacademy.ru/" method="post">
+                        <span class="time">02:23</span>
+                        <form class="new__register-body-kod-form" action="https://echo.htmlacademy.ru/" method="post">
                             <label for="">Kod</label>
-                            <input type="text" id="kod" name="kod" placeholder="****">
+                            <input class="kod" type="text" id="kod" name="kod" placeholder="****">
                             <a href="#link">Qayta yuborish</a>
                             <button>OK</button>
                         </form>
                     </div>
-                    <div class="new__register-body-parol">
-                        salom
+                    <div class="new__register-body-parol" style="display: none;">
+                        <form action="" method="post">
+                            <label for="parol">Parol</label>
+                            <input type="password" name="parol" id="parol">
+                            <label for="repeat_password">Parolni takrorlash</label>
+                            <input type="password" name="repeat_password" id="repeat_password">
+                            <button>OK</button>
+                        </form>
                     </div>
                 </div>
             </div>

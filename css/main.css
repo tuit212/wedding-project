@@ -967,6 +967,10 @@ template {
   margin-bottom: 80px;
 }
 
+.services {
+  text-align: center;
+}
+
 .services__top {
   width: 40%;
   margin: 0 auto;
@@ -1115,6 +1119,20 @@ template {
 .display-flex {
   display: flex;
   justify-content: space-between;
+}
+
+.services__button {
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 40px;
+  border: none;
+  background: #FFC131;
+  padding: 20px 22px 21px 23px;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
 }
 
 .site-footer {
@@ -1588,13 +1606,28 @@ option:hover {
   text-align: center;
   padding: 18px 0 22px 0;
   cursor: pointer;
+  text-align: center;
 }
-.new-register .new__register-top-kod > span {
+.new-register .new__register-top-kod .time {
+  display: inline-block;
+  margin-top: 10px;
   font-weight: 500;
   line-height: 29px;
   font-size: 24px;
   text-transform: uppercase;
   color: #000000;
+}
+.new-register .new__register-top-kod > span {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.new-register .new__register-top-kod-form .kod {
+  width: 400px;
 }
 .new-register .new__register-top-parol {
   width: 50%;

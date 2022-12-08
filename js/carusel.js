@@ -14,7 +14,7 @@ let span4 = document.querySelector("#span4");
 
 let plus = 0
 
-let active = document.querySelectorAll(".box1-span");
+let activ = document.querySelectorAll(".box1-span");
 
 
 

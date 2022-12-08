@@ -440,14 +440,36 @@ option{
             text-align: center;
             padding: 18px 0 22px 0;
             cursor: pointer;
+            text-align: center;
 
-            & > span{
+            .time{
+                display: inline-block;
+                margin-top: 10px;
                 font-weight: 500;
                 line-height: 29px;
                 font-size: 24px;
                 text-transform: uppercase;
                 color: #000000;
             }
+
+            & > span{
+                display: inline-block;
+                margin-top: 10px;
+                font-weight: 500;
+                line-height: 29px;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+
+            &-form{
+
+                .kod{
+                    width: 400px;
+                }
+            }
+
+            
         }
 
         &-parol{
