@@ -1,17 +1,83 @@
 
 .site-footer{
     background-color: #E8F6FD;
-    padding: 34px 0;
+    
+    .site__footer-bottom{
+        background-color: #FFFFFF;
+        padding: 16px 0;
 
+        .container{
+
+            & > ul {
+                @include center(none);
+                padding-left: 110px;
+    
+                & > li {
+                    width: 50%;
+                    font-weight: 400;
+                    line-height: 17px;
+                    font-size: 14px;
+                    color: #868585;
+                }
+            }
+        }
+    }
+    
     .footer{
+        padding: 34px 0;
 
         &__item{
-            @include center(space-between);
+            @include center(none);
             align-items: flex-start;
             padding: 0 50px;
 
             &-list{
-                width: 25%;
+                
+                &:first-child{
+                    width: 25%;
+                    padding-top: 85px;
+
+                    .footer__item-list-card{
+                        text-align: center;
+
+                        &-logo{
+                            font-weight: 500;
+                            line-height: 38px;
+                            font-size: 38px;
+                            color: #E23A60;
+                            display: inline-block;
+                            margin-bottom: 40px;
+
+                            & > span{
+                                color: #545454;
+                            }
+                        }
+
+                        &-register{
+                            display: inline-block;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border: 1px solid #E4BD63;
+                            border-radius: 10px;
+                            padding: 17px 19px 22px 20px;
+                            font-weight: 600;
+                            line-height: 20px;
+                            font-size: 16px;
+                            color: #282323;
+                        }
+                    }
+                }
+
+                &:last-child{
+                    width: 75%;
+
+                    .footer__item-list-right{
+                        @include center (space-between);
+                        align-items: flex-start;
+
+
+                    }
+                }
             }
         }
     }

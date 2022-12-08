@@ -152,7 +152,7 @@
     <main class="site-main">
         <section class="login-section">
             <div class="container">
-                <div class="register">
+                <div class="register"  style="display: none;" >
                     <div class="login">
                         <div class="login__left  wrapper login-active">
                             <div class="login__left-top">
@@ -212,7 +212,7 @@
                                 </div>
                                 <label class="label" for="Manzilingiz">Manzil</label>
                                 <input class="register-input" type="text" name="Manzilingiz" id="Manzilingiz"  placeholder="Manzilingiz" required>
-                                <div class="link">
+                                <div class="link links">
                                     <a href="#link">Sizning raqamingizga sms kod yuboriladi</a><br>
                                 </div>
                                 <button class="register-button">Registratsiya</button>
@@ -220,36 +220,134 @@
                         </div>
                     </div>
                 </div>
+                <div class="new-login" style="display: none;" >
+                    <div class="new-login-top">
+                        LOGIN
+                    </div>
+                    <form action="https://echo.htmlacademy.ru/" method="post">
+                        <label class="new-login-label" for="tel">telefon</label>
+                        <input class="new-login-input" type="tel" name="tel" id="tel" placeholder="+998 91 298 98 08">
+                        <a href="index.html">Bosh sahifa</a>
+                        <button class="new-login-button">OK</button>
+                    </form>
+                </div>
+                <div class="new-register">
+                    <div class="new__register-top">
+                        <div class="new__register-top-kod new__register new-register-active">
+                            <span>KOD</span>
+                        </div>
+                        <div class="new__register-top-parol new__register">
+                            <span>PAROL</span>
+                        </div>
+                    </div>
+                    <div class="new__register-body-kod">
+                        <span>02:23</span>
+                        <form action="https://echo.htmlacademy.ru/" method="post">
+                            <label for="">Kod</label>
+                            <input type="text" id="kod" name="kod" placeholder="****">
+                            <a href="#link">Qayta yuborish</a>
+                            <button>OK</button>
+                        </form>
+                    </div>
+                    <div class="new__register-body-parol">
+                        salom
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- main end -->
+
+
+
+
+
     <!-- footer start -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer">
                 <ul class="footer__item">
                     <li class="footer__item-list">
-                        <div>   
-                            <a href="index.html">
+                        <div class="footer__item-list-card">   
+                            <a class="footer__item-list-card-logo" href="index.html">
                                 Real<span>DAY</span>
                             </a>
                         </div>
-                        <div>
-                            <a href="login.html">
+                        <div class="footer__item-list-card" >
+                            <a class="footer__item-list-card-register" href="login.html">
                                 Registratsiyadan o'tish
                             </a>
                         </div>
                     </li>
                     <li class="footer__item-list">
-                        salom
+                        <ul class="footer__item-list-right">
+                            <li class="footer__item-list-right">
+                                <ul class="footer__item-list-right-wrapper">
+                                    <li><h6 class="wrapper__title">Aloqa</h6></li>
+                                    <li>
+                                        <i class="fa fa-phone"></i>
+                                        <a href="tel:+998912989808">+998 91 298 98 08</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone"></i>
+                                        <a href="tel:+998912989808">+998 91 298 98 08</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope-open-text"></i>
+                                        <span>asadbekanvarov9808@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope-open-text"></i>
+                                        <span>asadbekanvarov9808@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer__item-list-right">
+                                <ul>
+                                    <li><h6>Xizmatlar</h6></li>
+                                    <li><a href="#link">To'y liboslari</a></li>
+                                    <li><a href="#link">Taklifnomalar</a></li>
+                                    <li><a href="#link">Foto va video</a></li>
+                                    <li><a href="#link">San'atkolar</a></li>
+                                    <li><a href="#link">Love Story</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer__item-list-right">
+                                <ul>
+                                    <li><h6>Bo'limlar</h6></li>
+                                    <li><a href="#link">Asal oyi</a></li>
+                                    <li><a href="#link">Fotolar</a></li>
+                                    <li><a href="#link">Takliflar</a></li>
+                                    <li><a href="#link">Biz haqimizda</a></li>
+                                    <li><a href="#link">Kredit turlari</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="footer__item-list">
-                        salom
-                    </li>
-                    <li class="footer__item-list">
-                        salom
-                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="site__footer-bottom">
+            <div class="container">
+                <ul>
+                    <li>2022 yil</li>
+                    <li>GROUP tomonidan Ishlab chiqilgan </li>
                 </ul>
             </div>
         </div>
@@ -270,6 +368,5 @@
 
     <!-- js link -->
     <script src="./js/index.js"></script>
-    <script src="./js/login.js"></script>
 </body>
 </html>

@@ -1119,17 +1119,72 @@ template {
 
 .site-footer {
   background-color: #E8F6FD;
+}
+.site-footer .site__footer-bottom {
+  background-color: #FFFFFF;
+  padding: 16px 0;
+}
+.site-footer .site__footer-bottom .container > ul {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  padding-left: 110px;
+}
+.site-footer .site__footer-bottom .container > ul > li {
+  width: 50%;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 14px;
+  color: #868585;
+}
+.site-footer .footer {
   padding: 34px 0;
 }
 .site-footer .footer__item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: none;
   align-items: flex-start;
   padding: 0 50px;
 }
-.site-footer .footer__item-list {
+.site-footer .footer__item-list:first-child {
   width: 25%;
+  padding-top: 85px;
+}
+.site-footer .footer__item-list:first-child .footer__item-list-card {
+  text-align: center;
+}
+.site-footer .footer__item-list:first-child .footer__item-list-card-logo {
+  font-weight: 500;
+  line-height: 38px;
+  font-size: 38px;
+  color: #E23A60;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.site-footer .footer__item-list:first-child .footer__item-list-card-logo > span {
+  color: #545454;
+}
+.site-footer .footer__item-list:first-child .footer__item-list-card-register {
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #E4BD63;
+  border-radius: 10px;
+  padding: 17px 19px 22px 20px;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 16px;
+  color: #282323;
+}
+.site-footer .footer__item-list:last-child {
+  width: 75%;
+}
+.site-footer .footer__item-list:last-child .footer__item-list-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .login-active {
@@ -1288,7 +1343,7 @@ template {
 .register__left-body {
   width: 100%;
   display: none;
-  padding: 0px 94px;
+  padding: 0px 87px;
   margin: 70px auto;
 }
 .register__left-body .register-input {
@@ -1358,7 +1413,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: none;
-  gap: 82px;
+  gap: 70px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -1446,4 +1501,111 @@ option {
 option:hover {
   background-color: #262626;
   color: #FFFFFF;
+}
+
+.new-login {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 135px 75px 135px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.new-login > form > a {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #706C6C;
+  display: inline-block;
+  margin-top: 20px;
+}
+.new-login-top {
+  background: #EEEEEE;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  padding: 20px 102px;
+  margin-bottom: 57px;
+}
+.new-login-label {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #706C6C;
+  margin-left: 10px;
+}
+.new-login-input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #C4C4C4;
+  padding: 13px;
+  margin-top: 5px;
+}
+.new-login-button {
+  width: 100%;
+  border-radius: 12px;
+  background: #FF416C;
+  text-align: center;
+  padding: 11px 0;
+  border: none;
+  margin-top: 50px;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.new-register-active {
+  background: #EEEEEE;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.new-register {
+  width: 40%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.new-register .new__register-top {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+.new-register .new__register-top-kod {
+  width: 50%;
+  text-align: center;
+  padding: 18px 0 22px 0;
+  cursor: pointer;
+}
+.new-register .new__register-top-kod > span {
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.new-register .new__register-top-parol {
+  width: 50%;
+  text-align: center;
+  padding: 18px 0 22px 0;
+  cursor: pointer;
+}
+.new-register .new__register-top-parol > span {
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
