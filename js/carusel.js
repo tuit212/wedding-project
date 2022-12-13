@@ -1,5 +1,5 @@
 
-// carusel start
+// hero section carusel start
 
 
 
@@ -90,4 +90,4 @@ else{
 
 
 
-// carusel end
+// hero section carusel end

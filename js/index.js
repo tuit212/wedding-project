@@ -76,22 +76,7 @@ for (let i = 0; i < services.length; i++) {
 // services end
 
 
-// login
-
-// let loginTopLeft = document.querySelectorAll(".login__left");
-// let loginTopRight = document.querySelectorAll(".login__right");
-
-
-// let loginBody = document.querySelector(".login__left-body");
-
-// loginTopLeft.addEventListener("click", () => {
-	
-// })
-
-
-// login
-
-
+1
 
 let loginSection = document.querySelector(".login");
 let login = document.querySelector(".login__left");
@@ -214,5 +199,6 @@ for (let option = 0; option < elSelArr.length; option++) {
 		}
 	});
 }
+
 
 
